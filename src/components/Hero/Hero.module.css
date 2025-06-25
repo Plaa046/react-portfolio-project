@@ -31,7 +31,7 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: url('/1.png') no-repeat center/cover;
+  background: url('https://images.unsplash.com/photo-1603415526960-f7e0328b849b?auto=format&fit=crop&w=400&q=80') no-repeat center/cover;
   background-size: cover;
   background-position: center;
   margin: 0 auto;
