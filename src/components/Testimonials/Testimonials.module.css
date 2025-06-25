@@ -1,0 +1,67 @@
+.testi_con {
+  background-color: #FFFDF9;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.testi_title {
+  font-size: 36px;
+  color: #BFAEF5; 
+  margin-bottom: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.testi_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.testi_items {
+  background-color: #FFCCEA; 
+  border-radius: 20px;
+  padding: 30px 24px;
+  width: 320px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testi_items:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(204, 193, 255, 0.25); 
+}
+
+.testi_items p {
+  font-size: 15px;
+  color: #333;
+  margin: 16px 0;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testi_items img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 16px 0;
+  border: 3px solid #FFF6E3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.testi_items h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6b5c9e;
+  margin-bottom: 4px;
+}
+
+.bio {
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+}

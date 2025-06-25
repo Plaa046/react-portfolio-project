@@ -1,0 +1,43 @@
+.skills_con {
+  background-color: #CDC1FF; /* ม่วงพาสเทล */
+  color: #FFF6E3;
+  padding: 60px 20px;
+  text-align: center;
+  
+}
+
+.skilla_title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #FFF6E3ff;
+  letter-spacing: 1px;
+}
+
+.skilla_list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.skilla_list li {
+  background-color: #BFAEF5; 
+  padding: 20px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.skilla_list li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.skilla_list svg {
+  width: 60px;
+  height: 60px;
+  color:#FFF6E3; 
+}

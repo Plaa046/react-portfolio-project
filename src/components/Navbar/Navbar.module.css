@@ -1,0 +1,170 @@
+/* ====== โค้ดสำหรับ Desktop (เหมือนเดิม) ====== */
+.nav {
+  background-color: #CDC1FF; /* ม่วงพาสเทล */
+  box-shadow: 0 2px 8px rgba(205, 193, 255, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: white;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav_con {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF6E3; /* ขาวเหลืองนวล */
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* รวมเมนูและปุ่ม Hire Me เข้าด้วยกันเพื่อการจัดวางบน Desktop */
+.menu_items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu_items ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_items ul li {
+  margin: 0 15px;
+}
+
+.menu_items ul li a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu_items ul li a:hover {
+  color: #FFCCEA; /* ชมพูพาสเทลเวลาชี้เมาส์ */
+}
+
+/* ซ่อนปุ่ม Hamburger บน Desktop */
+.menu_icon {
+    display: none;
+}
+
+.button {
+  width: 120px;
+  height: 40px;
+  background-color: #FFF6E3; /* ขาวเหลืองนวล */
+  color: #CDC1FF; /* ม่วงพาสเทล */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(255, 204, 234, 0.4); /* ชมพูอ่อนเวลาชี้เมาส์ */
+}
+
+.button a {
+  text-decoration: none;
+  color: #CDC1FF;
+}
+
+/* ====== Responsive สำหรับหน้าจอมือถือ ====== */
+@media (max-width: 768px) {
+  /* --- 1. แสดงปุ่ม Hamburger --- */
+  .menu_icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001; /* ให้อยู่เหนือเมนู */
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FFF6E3; /* ขาวเหลืองนวล */
+    border-radius: 2px;
+  }
+  
+  /* --- 2. ซ่อน/แสดง เมนู --- */
+  .menu_items {
+    /* จัดการแสดงผลของเมนูเมื่อเปิดในมือถือ */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+    /* ทำให้เมนูเต็มหน้าจอ */
+    position: fixed;
+    top: 0;
+    left: -100%; /* ซ่อนไว้นอกจอด้านซ้ายเป็นค่าเริ่มต้น */
+    width: 100%;
+    height: 100vh;
+    background-color: #CDC1FF; /* ม่วงพาสเทล */
+    
+    transition: left 0.3s ease-in-out;
+  }
+  
+  /* เมื่อมีคลาส .open ให้เลื่อนเมนูเข้ามาในจอ */
+  .menu_items.open {
+    left: 0;
+  }
+
+  .menu_items ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .menu_items ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu_items ul li a {
+    font-size: 24px;
+    color: #FFF6E3; /* ขาวเหลืองนวล */
+    transition: color 0.3s ease;
+  }
+
+  .menu_items ul li a:hover {
+    color: #FFCCEA; /* ชมพูพาสเทล */
+  }
+
+  .button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #FFF6E3; /* ขาวเหลืองนวล */
+    color: #CDC1FF; /* ม่วงพาสเทล */
+  }
+
+  .logo a {
+    font-size: 28px;
+    color: #FFF6E3;
+  }
+}

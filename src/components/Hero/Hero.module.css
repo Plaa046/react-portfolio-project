@@ -1,0 +1,115 @@
+.hero_wrapper {
+  height: auto;
+  overflow: hidden;
+  background: #fcfaf7;
+  padding: 60px 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero_con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero_info {
+  flex: 1 1 400px;
+  min-width: 280px;
+}
+
+.hero_img {
+  flex: 1 1 300px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: url('/1.png') no-repeat center/cover;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.text_1 {
+  font-size: 48px;
+  color: #CDC1FF;
+  margin-bottom: 10px;
+}
+
+.text_2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #FFCCEA;
+  margin-bottom: 10px;
+}
+
+.text_3 {
+  font-size: 24px;
+  margin-top: 25px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.text_4 {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.hero_social {
+  display: flex;
+  list-style: none;
+  margin-top: 25px;
+  padding: 0;
+  gap: 20px;
+}
+
+.hero_social li a {
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.hero_social svg {
+  width: 32px;
+  height: 32px;
+}
+
+.hero_social li a:hover {
+  color: #FFCCEA;
+}
+
+/* ✅ Responsive สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+  .hero_con {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text_1,
+  .text_2 {
+    font-size: 36px;
+  }
+
+  .text_3 {
+    font-size: 20px;
+  }
+
+  .hero_img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 30px;
+  }
+
+  .hero_social {
+    justify-content: center;
+  }
+}
