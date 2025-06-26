@@ -2,46 +2,79 @@
   background-color: #FFFDF9; 
   padding: 80px 24px;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .services_title {
   font-size: 36px;
-  color: #FFCCEA; 
-  font-weight: 600;
+  color: #FF8ACD; /* สีชมพูพาสเทลสดใสขึ้น */
+  font-weight: 700;
   margin-bottom: 50px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(255, 204, 234, 0.7);
 }
 
 .services_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 32px;
+  gap: 36px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .services_items {
-  padding: 32px 24px;
+  background: #f7f3ff; /* สีพื้นพาสเทลม่วงอ่อน */
+  padding: 36px 28px;
   width: 280px;
-  border-radius: 18px;
- 
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(205, 193, 255, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.services_items:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(205, 193, 255, 0.45);
 }
 
 .services_items svg {
-  font-size: 42px;
-  color: #CDC1FF;
-  margin-bottom: 18px;
+  font-size: 48px;
+  color: #a992ff; /* สีม่วงเข้มขึ้น */
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.services_items:hover svg {
+  color: #ff79b0; /* เปลี่ยนสีไอคอนตอน hover */
 }
 
 .services_items h4 {
-  font-size: 20px;
-  color: #FF99CC;
-  margin-bottom: 12px;
-  font-weight: 600;
+  font-size: 22px;
+  color: #ff5da2; /* สีชมพูเข้ม */
+  margin-bottom: 14px;
+  font-weight: 700;
 }
 
 .services_items p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.6;
-  padding: 0 5px;
+  font-size: 15px;
+  color: #555555cc;
+  line-height: 1.7;
+  padding: 0 8px;
+  font-weight: 500;
+}
+
+/* Responsive: จอเล็ก */
+@media (max-width: 768px) {
+  .services_list {
+    flex-direction: column;
+    gap: 24px;
+    max-width: 100%;
+  }
+
+  .services_items {
+    width: 90%;
+    margin: 0 auto;
+  }
 }

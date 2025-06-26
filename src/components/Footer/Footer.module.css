@@ -1,19 +1,60 @@
 .footer {
-  background-color: #fff; /* ม่วงพาสเทล */
+  background-color: #ffffff;
   padding: 30px 20px;
-  text-align: center;
   display: flex;
+  justify-content: center;
   align-items: center;
+  border-top: 1px solid #eee;
 }
 
 .container {
   max-width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .footer p {
-  color: #CDC1FF;
+  color: #9c8cf6;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.5px;
+  margin: 0;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  color: #c1b2ff;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #a48dff;
+}
+
+/* ✅ รองรับหน้าจอเล็ก เช่น โทรศัพท์มือถือ */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .footer p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
 }

@@ -19,7 +19,7 @@ function Hero() {
             </p>
             <ul className={styles.hero_social}>
               <li>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Plaa046" target="_blank" rel="noopener noreferrer">
                   <FaGithub />
                 </a>
               </li>
@@ -29,7 +29,7 @@ function Hero() {
                 </a>
               </li>
               <li>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/pla.wal.l.947144" target="_blank" rel="noopener noreferrer" className={styles.icon}>
                   <FaFacebookF />
                 </a>
               </li>
