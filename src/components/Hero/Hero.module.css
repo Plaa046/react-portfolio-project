@@ -1,9 +1,9 @@
 .hero_wrapper {
   height: auto;
   overflow: hidden;
-  background: #fcfaf7;
+  background: #F5F5F5; 
   padding: 60px 0;
-  color: #333;
+  color: #3A4A66; 
 }
 
 .container {
@@ -39,27 +39,27 @@
 
 .text_1 {
   font-size: 48px;
-  color: #CDC1FF;
+  color: #8C2F39; 
   margin-bottom: 10px;
 }
 
 .text_2 {
   font-size: 48px;
   font-weight: bold;
-  color: #FFCCEA;
+  color: #eca7c4; 
   margin-bottom: 10px;
 }
 
 .text_3 {
   font-size: 24px;
   margin-top: 25px;
-  color: #666;
+  color: #3A4A66; 
   margin-bottom: 10px;
 }
 
 .text_4 {
   font-size: 16px;
-  color: #444;
+  color: #5f5f7a;
   margin-bottom: 20px;
   margin-top: 25px;
 }
@@ -74,6 +74,7 @@
 
 .hero_social li a {
   font-size: 24px;
+  color: #eca7c4;
   transition: color 0.3s ease;
 }
 
@@ -83,7 +84,7 @@
 }
 
 .hero_social li a:hover {
-  color: #FFCCEA;
+  color: #8C2F39; 
 }
 
 /* ✅ Responsive สำหรับหน้าจอขนาดเล็ก */

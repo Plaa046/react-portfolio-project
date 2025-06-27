@@ -1,10 +1,10 @@
 .footer {
-  background-color: #ffffff;
+  background-color: #F5F5F5; 
   padding: 30px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #C3CBEF;
 }
 
 .container {
@@ -18,7 +18,7 @@
 }
 
 .footer p {
-  color: #9c8cf6;
+  color: #3A4A66;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.5px;
@@ -32,16 +32,16 @@
 }
 
 .icon {
-  color: #c1b2ff;
+  color: #FFD7E8; 
   font-size: 1.4rem;
   transition: color 0.3s ease;
 }
 
 .icon:hover {
-  color: #a48dff;
+  color: #8C2F39; 
 }
 
-/* ✅ รองรับหน้าจอเล็ก เช่น โทรศัพท์มือถือ */
+/* ✅ Responsive สำหรับหน้าจอมือถือ */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;

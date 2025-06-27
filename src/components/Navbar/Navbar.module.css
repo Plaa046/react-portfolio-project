@@ -1,7 +1,6 @@
-
 .nav {
-  background-color: #CDC1FF; 
-  box-shadow: 0 2px 8px rgba(205, 193, 255, 0.3);
+  background-color: #3A4A66; /* Soft Navy */
+  box-shadow: 0 2px 8px rgba(58, 74, 102, 0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -24,16 +23,15 @@
 .logo a {
   font-size: 24px;
   font-weight: bold;
-  color: #ffffff; 
+  color: #FFD7E8; 
   text-decoration: none;
   letter-spacing: 1px;
 }
 
-
 .menu_items {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .menu_items ul {
@@ -49,7 +47,7 @@
 
 .menu_items ul li a {
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
   position: relative;
@@ -57,19 +55,18 @@
 }
 
 .menu_items ul li a:hover {
-  color: #FFCCEA;
+  color: #FFD7E8; 
 }
 
-
 .menu_icon {
-    display: none;
+  display: none;
 }
 
 .button {
   width: 120px;
   height: 40px;
-  background-color: #ffffff; 
-  color: #CDC1FF; 
+  background-color: #FFD7E8; 
+  color: #3A4A66; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,52 +80,48 @@
 
 .button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(255, 204, 234, 0.4); 
+  box-shadow: 0 4px 14px rgba(255, 215, 232, 0.5);
 }
 
 .button a {
   text-decoration: none;
-  color: #CDC1FF;
+  color: #3A4A66;
 }
 
 
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
- 
   .menu_icon {
     display: flex;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    z-index: 1001; 
+    z-index: 1001;
   }
 
   .bar {
     width: 25px;
     height: 3px;
-    background-color: #FFF6E3; 
+    background-color: #F0FFF4; 
     border-radius: 2px;
   }
-  
 
   .menu_items {
-  
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    
-  
+
     position: fixed;
     top: 0;
-    left: -100%; 
+    left: -100%;
     width: 100%;
     height: 100vh;
-    background-color: #CDC1FF; 
-    
+    background-color: #3A4A66; 
     transition: left 0.3s ease-in-out;
   }
-  
-  
+
   .menu_items.open {
     left: 0;
   }
@@ -146,12 +139,12 @@
 
   .menu_items ul li a {
     font-size: 24px;
-    color: #FFF6E3; 
+    color: #F0FFF4; 
     transition: color 0.3s ease;
   }
 
   .menu_items ul li a:hover {
-    color: #FFCCEA; 
+    color: #FFD7E8; 
   }
 
   .button {
@@ -159,12 +152,12 @@
     height: 50px;
     border-radius: 25px;
     font-size: 18px;
-    background-color: #FFF6E3; 
-    color: #CDC1FF; 
+    background-color: #FFD7E8; 
+    color: #3A4A66;
   }
 
   .logo a {
     font-size: 28px;
-    color: #FFF6E3;
+    color: #FFD7E8; 
   }
 }

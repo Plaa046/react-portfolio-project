@@ -1,5 +1,5 @@
 .testi_con {
-  background-color: #FFFDF9;
+  background-color: #F5F5F5; 
   margin: 0 auto;
   padding: 80px 20px;
   text-align: center;
@@ -8,10 +8,11 @@
 
 .testi_title {
   font-size: 36px;
-  color: #BFAEF5; 
+  color: #8C2F39;
   margin-bottom: 50px;
   font-weight: bold;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .testi_list {
@@ -22,22 +23,23 @@
 }
 
 .testi_items {
-  background-color: #FFCCEA; 
+  background-color: #FFD7E8; 
   border-radius: 20px;
   padding: 30px 24px;
   width: 320px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 14px rgba(58, 74, 102, 0.05); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
 }
 
 .testi_items:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(204, 193, 255, 0.25); 
+  box-shadow: 0 12px 28px rgba(140, 47, 57, 0.15); 
 }
 
 .testi_items p {
   font-size: 15px;
-  color: #333;
+  color: #3A4A66; 
   margin: 16px 0;
   line-height: 1.6;
   font-style: italic;
@@ -49,19 +51,19 @@
   border-radius: 50%;
   object-fit: cover;
   margin: 16px 0;
-  border: 3px solid #FFF6E3;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border: 3px solid #F0FFF4; 
+  box-shadow: 0 2px 6px rgba(58, 74, 102, 0.05);
 }
 
 .testi_items h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #6b5c9e;
+  color: #8C2F39; 
   margin-bottom: 4px;
 }
 
 .bio {
   font-size: 13px;
   font-weight: 500;
-  color: #666;
+  color: #666666cc;
 }

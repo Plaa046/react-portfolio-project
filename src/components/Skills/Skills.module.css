@@ -1,16 +1,15 @@
 .skills_con {
-  background-color: #CDC1FF; /* ม่วงพาสเทล */
-  color: #FFF6E3;
+  background-color: #C3CBEF; 
+  color: #3A4A66; 
   padding: 60px 20px;
   text-align: center;
-  
 }
 
 .skilla_title {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #FFF6E3ff;
+  color: #8C2F39; 
   letter-spacing: 1px;
 }
 
@@ -24,20 +23,21 @@
 }
 
 .skilla_list li {
-  background-color: #BFAEF5; 
+  background-color: #FFD7E8; 
   padding: 20px;
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(140, 47, 57, 0.15);
+  cursor: default;
 }
 
 .skilla_list li:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 24px rgba(140, 47, 57, 0.3);
 }
 
 .skilla_list svg {
   width: 60px;
   height: 60px;
-  color:#FFF6E3; 
+  color: #F0FFF4; 
 }

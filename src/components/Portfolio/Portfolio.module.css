@@ -1,15 +1,17 @@
 .port_con {
-  background-color: #FFFDF9; /* ครีมอ่อนมาก */
+  background-color: #F5F5F5;
   padding: 80px 24px;
   text-align: center;
 }
 
 .port_title {
   font-size: 36px;
-  color: #BFAEF5; /* ม่วงซอฟต์ */
+  color: #8C2F39; 
   font-weight: 600;
   margin-bottom: 48px;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(191, 174, 245, 0.5);
 }
 
 .port_list {
@@ -27,6 +29,13 @@
   object-fit: cover;
   filter: brightness(0.96);
   border-bottom: 1px solid #ECECEC;
+  box-shadow: 0 4px 10px rgba(191, 174, 245, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.port_items img:hover {
+  transform: scale(1.05);
+  filter: brightness(1);
 }
 
 .port_items div {
@@ -37,8 +46,9 @@
   text-align: center;
 }
 
-.port_items p{
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px;
+.port_items p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  color: #8C2F39;
 }
